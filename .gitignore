@@ -1,0 +1,4 @@
+# This file will ignore some specific files when "git add ."
+
+./finetuning/
+./infer/
