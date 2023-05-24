@@ -1,4 +1,8 @@
 # This file will ignore some specific files when "git add ."
 
+# about virtualenv
+./venv/
+
+# about training
 ./finetuning/
 ./infer/

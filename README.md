@@ -21,6 +21,27 @@
   conda install --yes --file requirements.txt
   ```
 
+### 2.3 安装依赖(以virtualvenv为例)
+
+- ```
+  python -m virtualvenv venv --python=python3.7
+  # 若为Windows用户, 请自行替换以下命令为 venv/bin/activate.bat 或 venv/bin/activate.ps1
+  source venv/bin/activate
+  python -m pip install -i https://pypi.tuna.tsinghua.edu.cn/simple -r requirements
+  ```
+
+- 若想自行将虚拟环境名称从 `venv` 改为 `其他名字`，请将虚拟环境目录添加进 `.gitignore`，避免虚拟环境被提交到github上！
+
+### 2.4 FAQ
+
+- 为什么我提示找不到 `paddlepaddle==2.4.2`?
+  - 请确定目前python版本为 `python3.7`
+  - 若仍找不到, 请确定使用了清华源: `https://pypi.tuna.tsinghua.edu.cn/simple`
+
+- 为什么我显卡很好，但是跑代码速度很慢?
+  - 默认依赖使用基于CPU的paddlepaddle包
+  - 若想启用CUDA，请自行将paddlepaddle版本改为gpu版，见 [PaddlePaddle](https://www.paddlepaddle.org.cn/install/quick)
+
 ## 3. 使用
 
 - `python main.py`
