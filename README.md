@@ -85,7 +85,7 @@
 
 ## 6. 如何使用Git&Github来修改仓库
 
-### 6.1 直接Push到主分支
+### 6.1 方法一: 直接Push到主分支
 
 - Clone仓库到本地
   - ```
@@ -104,7 +104,7 @@
     git push
     ```
 
-### 6.2 先Fork到自己的Github仓库上，再提交Pull Request
+### 6.2 方法二: 先Fork到自己的Github仓库上，再提交Pull Request
 
 - 先在 [主仓库](https://github.com/YXHXianYu/2023-BJTU-AI-Project) 中点击右上角的Fork，将仓库Fork到自己的账户中。
 
