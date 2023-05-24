@@ -21,10 +21,10 @@
   conda install --yes --file requirements.txt
   ```
 
-### 2.3 安装依赖(以virtualvenv为例)
+### 2.3 安装依赖(以virtualenv为例)
 
 - ```
-  python -m virtualvenv venv --python=python3.7
+  python -m virtualenv venv --python=python3.7
   # 若为Windows用户, 请自行替换以下命令为 venv/bin/activate.bat 或 venv/bin/activate.ps1
   source venv/bin/activate
   python -m pip install -i https://pypi.tuna.tsinghua.edu.cn/simple -r requirements
@@ -33,6 +33,10 @@
 - 若想自行将虚拟环境名称从 `venv` 改为 `其他名字`，请将虚拟环境目录添加进 `.gitignore`，避免虚拟环境被提交到github上！
 
 ### 2.4 FAQ
+
+- 为什么我找不到 `virtualenv`?
+  - 因为你没有安装，请使用 `python -m pip install virtualenv` 来安装 `virtualenv`
+  - `virtualenv` 和 `venv` 是两个东西
 
 - 为什么我提示找不到 `paddlepaddle==2.4.2`?
   - 请确定目前python版本为 `python3.7`
