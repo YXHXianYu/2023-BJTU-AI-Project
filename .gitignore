@@ -2,7 +2,10 @@
 
 # about virtualenv
 ./venv/
+venv/
 
 # about training
 ./finetuning/
+finetuning/
 ./infer/
+infer/

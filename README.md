@@ -20,6 +20,15 @@
   conda activate ai-project
   conda install --yes --file requirements.txt
   ```
+### 2.2.2安装依赖(pip实例)
+- ```powershell
+  # 创建虚拟环境
+  python -m venv ./venv
+  # 此时进入虚拟环境
+  ./venv/Scripts/activate
+  # 可能需要关梯子
+  pip install -r requirements.txt
+  ```
 
 ### 2.3 安装依赖(以virtualenv为例)
 
