@@ -20,16 +20,7 @@
   conda activate ai-project
   conda install --yes --file requirements.txt
   ```
-### 2.2.2安装依赖(pip实例)
-- ```powershell
-  # 创建虚拟环境
-  python -m venv ./venv
-  # 此时进入虚拟环境
-  ./venv/Scripts/activate
-  # 可能需要关梯子
-  pip install -r requirements.txt
-  ```
-
+  
 ### 2.3 安装依赖(以virtualenv为例)
 
 - ```
@@ -39,9 +30,22 @@
   python -m pip install -i https://pypi.tuna.tsinghua.edu.cn/simple -r requirements
   ```
 
+### 2.4 安装依赖(以venv为例)
+
+- venv要求本机默认python版本为3.7，否则会出现找不到依赖的情况！
+
+- ```powershell
+  # 创建虚拟环境
+  python -m venv ./venv
+  # 此时进入虚拟环境
+  ./venv/Scripts/activate
+  # 可能需要关梯子
+  pip install -r requirements.txt
+  ```
+
 - 若想自行将虚拟环境名称从 `venv` 改为 `其他名字`，请将虚拟环境目录添加进 `.gitignore`，避免虚拟环境被提交到github上！
 
-### 2.4 FAQ
+### 2.5 FAQ
 
 - 为什么我找不到 `virtualenv`?
   - 因为你没有安装，请使用 `python -m pip install virtualenv` 来安装 `virtualenv`
